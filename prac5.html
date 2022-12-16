@@ -1,0 +1,24 @@
+<!-- A person deposits Rs 1000 in a fixed account yielding 5% interest. Compute the amount in the account at the end of each year for n years. -->
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    Enter No of Years : <input id="n"> <br>
+
+    <input type="button" value="Compute interest and amount " onclick="avg()">
+    <script>
+        function avg() {
+            var t = parseInt(document.getElementById("n").value);
+            for (var i = 1; i <= t; i++) {
+                var itrst = parseInt((1000 * 5 * i) / 100);
+                document.write("Intrest after " + i + " year is :" + itrst + " and total amount after" + i + " years" + " become :" + (itrst + 1000) + "<br>")
+            }
+        }
+    </script>
+</body>
+
+</html>
